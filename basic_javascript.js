@@ -1,5 +1,4 @@
 // Object Example
-/* 
 const bookDetails = [{
     name: "Machine learning",
     price: 200
@@ -19,20 +18,18 @@ const bookDetails = [{
 
 
 console.log(bookDetails["name"]);
-*/
+
 
 // Example of indexOf & lastIndexOf
-/*
 function findIndex(str, target){
     console.log("Orginal Stringh:", str);
     console.log("Index:", str.lastIndexOf(target)); //User can implement indexOf/lastIndexOf
 }
 
 findIndex("Hello world world", "world");
-*/
 
-// Example of CallBack function
-/* 
+
+// Example of CallBack function 
 function calculation(a,b, total){
     const ans = total(a,b);
     return ans;
@@ -43,10 +40,9 @@ function sum(a, b){
 }
 
 console.log(calculation(1,2,sum));
-*/
+
 
 // Example of call back
-/*
 function sum(a,b,finToCall){
     const ans = a + b;
     finToCall(ans);
@@ -57,20 +53,18 @@ function displayResult(data){
 }
 
 console.log(sum(1,2,displayResult));
-*/
+
 
 // Example of setTimeOut & setInterval
-/*
 function greet(){
     console.log("hello world");
 } 
 
 setTimeout(greet, 3*1000);
 setInterval(greet, 2000);
-*/
+
 
 // Example of call back function
-/*
 function calculation(a, b, totalFunction) {
     return totalFunction(a, b);
 }
@@ -84,20 +78,18 @@ function setTimeOut(totalFunction, duration) {
 }
 
 console.log(calculation(1, 2, sum));
-*/  
+
 
 //Example of Slice
-/*
 function getSlice(str, start, end){
     console.log("Orginal String:", str);
     console.log("After Slice", str.slice(start, end));
 }
 
 getSlice("hello world", 1, 5);
-*/
+
 
 //Other way to implementing the slice
-/*
 function cutIt(str, startIndex, endIndex){
     let newStr = "";
     for(let i = 0; i < str.length; i++){
@@ -109,35 +101,30 @@ function cutIt(str, startIndex, endIndex){
 }
 
 console.log(cutIt("hello world", 1, 5));
-*/
+
 
 // Example of replace
-/*
 const str = "hello world";
 console.log(str.replace("world", "javascript"));
-*/
+
 
 // Example of split function
-/*
 const value = "hello world javascript";
 console.log(value.split(" "));
-*/
+
 
 // Example of trim (It helps removing space of benning and end)
-/*
 const value = "   hello world    ";
 console.log(value.trim());
-*/
+
 
 //Example of concat 
-/*
 const arr1 = [1,2,3];
 const arr2 = [4,5,6];
 console.log(arr1.concat(arr2));
-*/
+
 
 // Example for forEach with callBack function
-/*
 const arr = [1,2,3];
 
 function logThing(str){
@@ -145,14 +132,12 @@ function logThing(str){
 }
 
 arr.forEach(logThing);
-*/
+
 
 
 //////////////////////////////////////////////////// Ops In Javascript /////////////////////////////////////////////////
 
 // Example of class and object
-
-/*
 class animle { // Creating class
     constructor(name, legCount, speaks){
         this.name = name;
@@ -181,15 +166,13 @@ console.log(cat) // Its return this result -> animle { name: 'cat', legCount: 4,
 ///////////////////////////////////////////////////////  Date & Time //////////////////////////////////////////////////////
 
 //Example of getting date and time
-/*
 const currentDate = new Date();
 
 console.log(currentDate.getDate());
 console.log(currentDate.getFullYear());
-*/
+
 
 // "Creating a function to measure the program execution time."
-/*
 function calculation (){
     let a = 0;
     for(let i = 0; i < 100000000; i++){
@@ -207,12 +190,11 @@ const afterDate = new Date();
 const afterTimeInMs = afterDate.getTime();
 
 console.log(afterTimeInMs - beforeTimeInMs);
-*/
+
 
 //////////////////////////////////////////////////////Async Function//////////////////////////////////////////////////
 
-// Example of Async function
-/* 
+// Example of Async function 
 const fs = require('fs');
 
 fs.readFile('testing.txt', 'utf-8', (err, data) => console.log(data));
@@ -225,10 +207,10 @@ for(let i = 0; i<=10000; i++){
 }
 
 console.log('testing is underway');
-*/
+
 
 // Example of own Asynchronous function
-/*
+
 const fs = require('fs');
 
 function readText(cb){
@@ -240,7 +222,7 @@ function oneDone(data){
 }
 
 readText(oneDone);
-*/
+
 
 //Example of Promise
 const fs = require('fs');
