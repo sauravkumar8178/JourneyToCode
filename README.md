@@ -40,4 +40,4 @@ Although this is a personal challenge, I welcome feedback, suggestions, and cont
 If you have any questions or just want to connect, you can reach me via:
 
 - GitHub: [Your GitHub Profile](http://github.com/sauravkumar8178)
-- Email: [ss98108@gmail.com]
+- Email: ss98108@gmail.com
