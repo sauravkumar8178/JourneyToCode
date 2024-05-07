@@ -10,7 +10,15 @@ app.get('/route-handler', (req, res) =>{
     });
 }); 
 
-app.use(bodyParser.json());
+app.use(bodyParser.json()); // we can use express in replace of bodyParser
+
+app.post('/backend-api/conversation', (req, res) => {
+    const message = req.body.message;  // To access the client message by using body parser
+    console.log(message);
+    res.json({
+        output: "data is sended"
+    })
+})
 
 app.post('/conversation', (req, res) => { 
 
