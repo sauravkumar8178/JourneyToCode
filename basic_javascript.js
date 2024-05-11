@@ -114,8 +114,8 @@ console.log(value.split(" "));
 
 
 // Example of trim (It helps removing space of benning and end)
-const value = "   hello world    ";
-console.log(value.trim());
+const value1 = "   hello world    ";
+console.log(value1.trim());
 
 
 //Example of concat 
@@ -125,13 +125,13 @@ console.log(arr1.concat(arr2));
 
 
 // Example for forEach with callBack function
-const arr = [1,2,3];
+const arrTest = [1,2,3];
 
 function logThing(str){
     console.log(str);
 }
 
-arr.forEach(logThing);
+arrTest.forEach(logThing);
 
 
 
@@ -161,7 +161,7 @@ let cat = new animle("cat", 4, "meow");
 cat.speak(); // It return this -> hi animel speak: meow (Call function on object)
 
 console.log(cat) // Its return this result -> animle { name: 'cat', legCount: 4, speaks: 'meow' }
-*/
+
 
 ///////////////////////////////////////////////////////  Date & Time //////////////////////////////////////////////////////
 
@@ -236,3 +236,33 @@ function oneDone(data){
 }
 
 readText().then(oneDone);
+
+
+
+/////////////////////////////////////////////////////// map, filters, and arrows function ////////////////////////////////////////////////////////
+
+// Arroow function
+const sum = (a,b) =>{
+    return a+b;
+}
+
+// Map function
+const input = [1,2,3,4,5];
+
+const ans = input.map((i) =>{
+    return i * 2;
+});
+console.log(ans);
+
+// Filters function
+const arr = [1,2,3,4,5];
+
+const result = arr.filter((i) =>{
+    if(i % 2 == 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+});
+console.log(result);
