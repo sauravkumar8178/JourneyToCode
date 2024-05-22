@@ -1,15 +1,15 @@
 const express = require('express');
 const app = express();
-const port = 3001
+const port = 3001;
 
-app.use(express.json);
+app.use(express.json());
 
 app.get('/health-checkup', (req, res) =>{
     // do health check here
     const kidneyId = req.query.kidneyId;
-    const username = req.header.username;
-    const password = req.header.password;
-    if(username != "saurav@gmail.com" && password != "pass"){
+    const username = req.headers.username;
+    const password = req.headers.password;
+    if(username != "saurav@gmail.com" || password != "pass"){
         res.status(403).json({
             msg: "Username and Password are incorrect. Please try again!"
         });
@@ -20,6 +20,7 @@ app.get('/health-checkup', (req, res) =>{
         res.status(411).json({
             msg: "Wrong Input!"
         })
+        return;
     }
 
     res.send("Your heart is healthy");
