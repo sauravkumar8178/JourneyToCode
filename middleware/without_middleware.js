@@ -26,6 +26,16 @@ app.get('/health-checkup', (req, res) =>{
     res.send("Your heart is healthy");
 })
 
+app.get('/last-checkup', (req, res, next) => {
+    console.log('first auth');
+    next();
+}, (req, res, next) =>{
+    console.log('sencond auth');
+    next();
+}, (req, res) =>{
+    console.log('final auth');
+})
+
 
 
 
