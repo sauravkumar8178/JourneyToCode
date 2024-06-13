@@ -23,9 +23,11 @@
             const response = await fetch('https://fakerapi.it/api/v1/persons');
             const finalData = await response.json();
             console.log(finalData);
+            document.getElementById("userData").innerHTML = JSON.stringify(finalData);
             
         }
     </script>
+    <div id="userData"></div>
     <button onclick="getAnimalData()">Get Animal Data</button>
 </body>
 </html>
