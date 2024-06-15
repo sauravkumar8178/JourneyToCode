@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h2>JavaScript HTML DOM</h2>
+    <p class="intro">paragraph one</p>
+    <div>Div two</div>
+    <p class="subheading">Paragraph two</p>
+    <div>Yet another div</div>
+
+    <div id="myDiv" style="border: 1px solid black; padding: 8px;">
+        <h2 class="example">A Heading</h2>
+        <p class="example">A paragraph</p>
+        <p class="example">A paragraph</p>
+    </div>
+    <p id="demo"></p>
+    
+    <script>
+        //Changing the color by using the "querySelector"
+        let paragraph = document.querySelectorAll('p');
+        paragraph.forEach(paragraph => paragraph.style.backgroundColor = "red");
+
+        const element = document.getElementById("myDiv");
+        const list = element.querySelectorAll('.example');
+        document.getElementById('demo').innerHTML = list.length;
+    </script>
+</body>
+</html>
