@@ -98,3 +98,10 @@ mongoose.connect(CONNECTION_URL)
     2. Ask the user to send back the token in all future requests
     3. When the user logs out, ask the user to forget the token (or revoke it from the backend) 
 */
+
+/* 
+    1. Create sign-in and sign-out with jwt.
+    2. Create add user, delete user, and update user routes with jwt.
+    3. Add Rate limit and Server hit count with time duration.
+    4. Implementing the middleware.
+*/
