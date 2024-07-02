@@ -2,11 +2,12 @@ const express = require('express');
 const zod = require('zod');
 const jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 const app = express();
 const port = process.env.port || 3000;
 const jwtPassword = "3456789";
-const CONNECTION_URL = 'mongodb+srv://ss989108:gkFIAwntJ6Vh9rZu@bookstore.ibvbncc.mongodb.net/user_app?retryWrites=true&w=majority'
+const CONNECTION_URL = process.env.DATABASE_URL;
 
 app.use(express.json());
 
