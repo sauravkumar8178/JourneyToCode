@@ -1,43 +1,29 @@
-# 100-Day Full Stack Development Challenge
+# JourneyToCode
 
-Welcome to my 100-Day Full Stack Development Challenge repository! In this challenge, I aim to complete full-stack development from scratch within 100 days and then create an enterprise-level project.
+Welcome to **JourneyToCode** repository! This is where I document my web development learning process, showcase my progress, and present mini projects, practice projects, and major projects using different technologies and frameworks. Each project is a step on my journey to becoming a proficient full-stack developer.
 
-## About the Challenge
+## About the Repository
 
-This challenge is a personal journey to enhance my skills in full-stack development. Over the course of 100 days, I will be coding, learning, and building projects from scratch. Each day, I will document my progress, challenges faced, and lessons learned.
+This repository serves as a comprehensive log of my learning and growth in web development. It includes:
 
-## Goals
+- **Mini Projects**: Short projects to explore and practice a specific technology or concept.
+- **Practice Projects**: Projects that combine various technologies and concepts to build a functional solution.
+- **Major Projects**: Large-scale, full-stack applications that showcase the integration of multiple technologies and demonstrate my skills.
 
-- Complete full-stack development curriculum within 100 days.
-- Build a strong foundation in frontend and backend technologies.
-- Gain practical experience by working on real-world projects.
-- Develop problem-solving and critical thinking skills.
-- Create an enterprise-level project showcasing my skills and knowledge.
+### Goals
+- Learn and master a wide range of web development technologies and frameworks.
+- Build a diverse portfolio of small, medium, and large projects to demonstrate my skills.
+- Share challenges, solutions, and insights to help others in their development journey.
+- Continuously update this repository with new projects, techniques, and learnings.
 
-## Technologies/Frameworks
+### Technologies/Frameworks
+The repository will contain projects using these technologies, with more added as I progress:
+- **Frontend**: HTML, CSS, JavaScript, React.js, Next.js
+- **Backend**: Node.js, Express.js, MongoDB, PostgreSQL
+- **Other Tools**: Git, GitHub, VS Code, npm/yarn, Docker, and more
 
-During this challenge, I will be working with a variety of technologies and frameworks, including but not limited to:
+### Progress Tracking
+I will use GitHub Issues and Projects to track my progress, set goals, and document each project. This will help organize the learning journey, from day-to-day updates to long-term milestones.
 
-- Frontend: HTML, CSS, JavaScript, React.js, Next.js
-- Backend: Node.js, Express.js, MongoDB, PostgreSQL
-- Other Tools: Git, GitHub, VS Code, npm/yarn
-
-## Repository Structure
-
-- `day-001-to-day-100/`: This folder contains subfolders for each day of the challenge, documenting my progress, code, and reflections.
-- `enterprise-project/`: Once the challenge is completed, this folder will contain all the code, documentation, and resources related to my enterprise-level project.
-
-## Progress Tracking
-
-I will be using GitHub Issues and Projects to track my progress, set goals, and manage tasks. Each day's progress will be documented in the corresponding issue or project card.
-
-## How to Contribute
-
-Although this is a personal challenge, I welcome feedback, suggestions, and contributions from the community. If you have any ideas, improvements, or want to share your own experiences, feel free to open an issue or pull request.
-
-## Contact
-
-If you have any questions or just want to connect, you can reach me via:
-
-- GitHub: [Your GitHub Profile](http://github.com/sauravkumar8178)
-- Email: ss98108@gmail.com
+### How to Contribute
+I welcome feedback, suggestions, and contributions! If you have any insights, improvements, or ideas for future projects, feel free to open an issue or submit a pull request.
