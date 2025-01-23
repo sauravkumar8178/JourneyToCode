@@ -1,0 +1,21 @@
+{
+  "name": "passpredictor",
+  "version": "1.0.0",
+  "description": "**Project Overview:** PassPredictor is an intelligent password management and analysis system designed to enhance user security by analyzing and predicting password changes. The system monitors and records every password change made by users, storing relevant information securely. By leveraging machine learning techniques, PassPredictor analyzes the historical password data to predict future passwords and identify potential security weaknesses.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.0",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
