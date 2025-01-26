@@ -45,6 +45,19 @@ async function userRegistration(req, res) {
     }
 }
 
+async function userLogin(req,res) {
+    try{
+        const { email, password } = req.body;
+        if (!email || !password){
+            return res.status(400).json({
+                message: "Incorrect email or password"
+            })
+        }
+    } catch (error){
+
+    }
+}
 module.exports = {
-    userRegistration
+    userRegistration,
+    userLogin
 };
