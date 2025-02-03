@@ -1,0 +1,3 @@
+## Overview
+
+In this project, I am implementing web sockets to establish a real-time, bi-directional communication channel between the client and server. This allows for continuous data flow, ensuring that updates are delivered instantly to users without the need to refresh the page. The use of web sockets enhances the user experience by providing immediate feedback, making the application more interactive and responsive. Whether it's for live notifications, chat applications, or real-time data synchronization, web sockets are integrated to ensure seamless and efficient communication throughout the application.
