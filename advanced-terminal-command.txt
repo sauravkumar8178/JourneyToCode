@@ -1,0 +1,29 @@
+- `pwd`: prints the current directory path.
+- `ls`: lists files and directories in the current location.
+- `ls -l`: provides a detailed list of files and directories along with their sizes.
+- `ls -R`: lists all files and directories recursively, showing the contents of sub directories as well.
+- `ls -t`: lists files and directories sorted by modification time, with the most recently modified files shown first.
+- `ls -lt`: lists files and directories in long format sorted by modification time, with the most recently modified files shown first.
+- `ls -la`: lists all files and directories in long format, including hidden files, with detailed information about permissions, ownership, and modification times.
+- `ls -lRa`: lists all files and directories recursively in long format, including hidden files, with detailed information about permissions, ownership, and modification times.
+- `ls -lr`: lists files and directories in reverse order of their names.
+- `ls -s` : lists files and directories along with their sizes in blocks.
+- `ls -lR | grep .json`: lists all files and directories recursively, then filters the output to display only lines containing ".json". This command effectively lists all files with the ".json" extension in the current directory and its sub directories, along with their detailed information.
+- `ls *.json`: lists all files in the current directory with the ".json" extension.
+- `ls Zoo*`: lists all files and directories in the current directory that start with "Zoo".
+- `ls ..`: lists the contents of the parent directory of the current directory.
+- `cat > file_name`: allows you to create or edit a file named "file_name" by typing text directly into the terminal. Press Ctrl+D when you're finished to save the changes and exit.
+- `cat >> file_name`: allows you to append text to an existing file named "file_name" by typing text directly into the terminal. Press Ctrl+D when you're finished to save the changes and exit.
+- `mkdir test && cd test`: This command creates a directory named "test" using `mkdir`, and if successful, it changes the current directory to "test" using `cd`.
+- `mkdir -p directory_name/directory_name`: creates nested directories without error, if necessary.
+- `mv test.txt index.html`: Changing file name.
+- `rm file_name` : deletes the file named "file_name" from the current directory.
+- `rm -r folder_name`: removes the directory named "folder_name" and its contents recursively.
+- `chmod u+x newscript.sh`: adds executable permission (x) to the owner (u) of the file "newscript.sh", allowing them to execute the script.
+- `chmod g+x newscript.sh`: adds executable permission (x) to the group (g) of the file "newscript.sh", allowing members of the file's group to execute the script.
+- `chmod 664 1234`: sets the file permission of the file "1234" to 664. This means the owner has read and write permissions, the group has read and write permissions, and others have read permissions.
+- `chmod 777`: sets the file permissions to read, write, and execute for the owner, group, and others.
+- `echo $PATH`: prints the value of the environment variable `PATH`, which contains a list of directories where executable files are located.
+- `grep`: is a command-line utility used to search for patterns in text files. It searches for lines containing a specified pattern and prints them to the standard output.
+- `sed`: is a stream editor used to perform basic text transformations on an input stream (a file or input from a pipeline). It's commonly used for searching, find and replace, inserting, deleting, and modifying text.
+- `awk`: is a versatile text processing tool that operates on lines of input and is particularly useful for pattern scanning and processing. It allows for easy manipulation of data, including selecting certain lines, splitting lines into fields, and performing operations on those fields.
