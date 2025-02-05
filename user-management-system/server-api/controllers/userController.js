@@ -1,44 +1,38 @@
-const { genSalt, hash } = require('bcryptjs');
+// const { genSalt, hash } = require('bcryptjs');
+const user = require ('../db/models/user');
 
 async function userRegistration(req, res) {
     try {
-        const { name, email, password } = req.body;
-        if (!name || !email || !password) {
-            return res.status(400).json({
-                message: "All fields are required"
+        const {firstName, lastName, email, password} = req.body;
+
+        if(!firstName || !lastName || !email || !password) {
+            return res.status(400).send({
+                status: 'failed',
+                message: 'Field is missing'
             });
         }
 
-        const existingUser = await User.findOne({ email: email });
-        if (existingUser) {
-            return res.status(400).json({
-                message: "User already exists"
-            });
-        }
-
-        const salt = await genSalt(10);
-        const hashPassword = await hash(password, salt);
-
-        const createUser = await User.create({
-            name,
-            email,
-            password: hashPassword
+        const newUser = await user.create({
+            firstName: firstName,
+            lastName: lastName,
+            email: email,
+            password: password
         });
 
-        const checkUserId = await User.findById(createUser._id);
-        if (!checkUserId) {
-            return res.status(500).json({
-                message: "Internal server error"
+        if(!newUser){
+            return res.status(400).send({
+                status: "failed",
+                message: 'User Not Registered'
             });
         }
 
-        res.status(201).json({
-            message: "User created successfully"
-        });
-
+        return res.status(201).send({
+            status: 'success',
+            data: newUser
+        })
     } catch (error) {
         console.log(`User Registration Error: ${error}`);
-        res.status(500).json({
+        return res.status(500).json({
             message: "Server error"
         });
     }
@@ -53,10 +47,45 @@ async function userLogin(req,res) {
             })
         }
     } catch (error){
+        console.log("User Login Error:", error);
+        return res.status(500).json({
+            status: "error",
+            message: "Server error"
+        })
+    }
+}
 
+async function resetPassword(req,res) {
+    try{
+        return res.status(200).json({
+            message: "Password reset successfully"
+        })
+    } catch (error) {
+        console.log("Reset Password Error:", error);
+        return res.status(500).json({
+            status: "error",
+            message: "Server error"
+        })
+    }
+}
+
+async function loggedOut(req, res) {
+    try{
+        return res.status(200).send({
+            status: 'success',
+            message: "User Logged Out"
+        })
+    } catch (error) {
+        console.log("User Logged Out Error:", error);
+        return res.status(500).send({
+            status: "error",
+            message: "Server error"
+        })
     }
 }
 module.exports = {
     userRegistration,
-    userLogin
+    userLogin,
+    resetPassword,
+    loggedOut
 };

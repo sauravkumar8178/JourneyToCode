@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  ums-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: npm run dev
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - ums-app
+
+  ums-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: npm start
+    environment:
+      - NODE_ENV=production

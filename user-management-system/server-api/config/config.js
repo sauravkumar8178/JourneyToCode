@@ -10,17 +10,19 @@ module.exports = {
     "dialect": "postgres"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "username": process.env.TEST_USER,
+    "password": process.env.TEST_PASSWORD,
+    "database": process.env.DB_NAME,
+    "host": process.env.DB_HOST,
+    "port": parseInt(process.env.TEST_USER_PORT, 10),
     "dialect": "postgres"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": process.env.PRODUCT_USER,
+    "password": process.env.PRODUCT_PASSWORD,
+    "database": process.env.PRODUCT_NAME,
+    "port": parseInt(process.env.PRODUCT_PORT, 10),
+    "host": process.env.PRODUCT_HOST,
     "dialect": "postgres"
   }
 }
